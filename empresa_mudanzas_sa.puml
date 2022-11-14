@@ -17,6 +17,7 @@ class Transporte {
 + void setMaxCapacity(double)
 + int getMaxItemCounter()
 + void setMaxItemCounter(int)
++ void load(Transportable)
 }
 class Main {
 + {static} void main(String[])
