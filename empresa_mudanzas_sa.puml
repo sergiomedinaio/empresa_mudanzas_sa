@@ -1,0 +1,52 @@
+@startuml
+class Transporte {
+- ArrayList<Transportable> transportables
+- Dimension dimension
+- double capacity
+- double maxCapacity
+- int maxItemCounter
++ <<Create>> Transporte(ArrayList<Transportable>,Dimension,double,double,int)
++ <<Create>> Transporte(Dimension,double,int)
++ ArrayList<Transportable> getTransportables()
++ void setTransportables(ArrayList<Transportable>)
++ Dimension getDimension()
++ void setDimension(Dimension)
++ double getCapacity()
++ void setCapacity(double)
++ double getMaxCapacity()
++ void setMaxCapacity(double)
++ int getMaxItemCounter()
++ void setMaxItemCounter(int)
+}
+class Main {
++ {static} void main(String[])
+}
+class Transportable {
+- Dimension dimension
+- String name
+- double weight
+- boolean fragile
++ <<Create>> Transportable(Dimension,String,double,boolean)
++ <<Create>> Transportable(Dimension,String,double)
++ Dimension getDimension()
++ void setDimension(Dimension)
++ String getName()
++ void setName(String)
++ double getWeight()
++ void setWeight(double)
++ boolean isFragile()
++ void setFragile(boolean)
+}
+class Dimension {
+- double width
+- double height
+- double depth
++ <<Create>> Dimension(double,double,double)
++ double getWidth()
++ void setWidth(double)
++ double getHeight()
++ void setHeight(double)
++ double getDepth()
++ void setDepth(double)
+}
+@enduml
