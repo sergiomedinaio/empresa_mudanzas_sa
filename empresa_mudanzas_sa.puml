@@ -18,6 +18,7 @@ class Transporte {
 + int getMaxItemCounter()
 + void setMaxItemCounter(int)
 + void load(Transportable)
++ String generateBillList()
 }
 class Main {
 + {static} void main(String[])
