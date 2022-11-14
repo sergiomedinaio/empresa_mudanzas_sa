@@ -32,6 +32,17 @@ public class Main {
                 false
         );
 
+        Transporte mainBus = new Transporte(
+                new Dimension(2.0, 1.5, 3.0),
+                100.0,
+                3
+        );
+
+        mainBus.load(chair);
+        mainBus.load(matalChair);
+        mainBus.load(oldTv);
+        mainBus.load(newTv);
+        mainBus.load(myTv);
 
     }
 }

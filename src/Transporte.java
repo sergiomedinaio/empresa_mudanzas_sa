@@ -63,4 +63,8 @@ public class Transporte {
         this.maxItemCounter = maxItemCounter;
     }
 
+    public void load(Transportable transportable) {
+        if(getTransportables().size() >= getMaxItemCounter()) return;
+        getTransportables().add(transportable);
+    }
 }
