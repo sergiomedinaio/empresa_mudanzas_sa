@@ -38,9 +38,16 @@ public class Main {
                 3
         );
 
+        Transportable elephant = new Transportable(
+                new Dimension(1.5, 1.5, 3.0),
+                "male elephant",
+                400.0,
+                false
+        );
+
         mainBus.load(chair);
         mainBus.load(matalChair);
-        mainBus.load(oldTv);
+        mainBus.load(elephant);
         mainBus.load(newTv);
         mainBus.load(myTv);
 

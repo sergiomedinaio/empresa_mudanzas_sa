@@ -65,6 +65,8 @@ public class Transporte {
 
     public void load(Transportable transportable) {
         if(getTransportables().size() >= getMaxItemCounter()) return;
+        if (getCapacity() + transportable.getWeight() > getMaxCapacity()) return;
         getTransportables().add(transportable);
+        setCapacity(getCapacity() + transportable.getWeight());
     }
 }
