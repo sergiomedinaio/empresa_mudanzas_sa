@@ -51,5 +51,6 @@ public class Main {
         mainBus.load(newTv);
         mainBus.load(myTv);
 
+        System.out.println(mainBus.generateBillList());
     }
 }

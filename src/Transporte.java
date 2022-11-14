@@ -69,4 +69,15 @@ public class Transporte {
         getTransportables().add(transportable);
         setCapacity(getCapacity() + transportable.getWeight());
     }
+
+    public String generateBillList() {
+        String bill = "";
+        for (int i = 0; i < transportables.size(); i++) {
+            String name = getTransportables().get(i).getName();
+            double weight = getTransportables().get(i).getWeight();
+            bill += name + " ("+ weight + "Kg.)\n";
+        }
+        bill += "Total weight: " + getCapacity() + " Kg";
+        return bill;
+    }
 }
